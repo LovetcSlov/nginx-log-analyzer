@@ -57,3 +57,5 @@ git push -u origin master
       - id: flake8
 
 4.4. Хуки - "poetry run pre-commit install"
+5. Настройка CI/CD (GitHub Actions)
+5.1. Создание файла .github/workflows/ci.yml
