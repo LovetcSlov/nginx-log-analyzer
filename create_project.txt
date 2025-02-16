@@ -31,3 +31,29 @@ build/
 2.2.10. файл Makefile - "touch Makefile"
 2.2.11. Создать папку для CI/CD (GitHub Actions) - "mkdir -p .github/workflows
 touch .github/workflows/ci.yml"
+
+3.Работа с ГИТ:
+git init
+git add .
+git commit -m "Initial commit"
+git remote add origin  https://github.com/LovetcSlov/nginx-log-analyzer.git
+git remote -v
+        origin  https://github.com/LovetcSlov/my_project.git (fetch)
+        origin  https://github.com/LovetcSlov/my_project.git (push)
+git push -u origin master
+
+4. Настройка pre-commit хуков
+4.1. Установка pre-commit - "poetry add --dev pre-commit"
+4.2. файл .pre-commit-config.yaml - touch .pre-commit-config.yaml
+4.3. конфигурацию для black и flake8 -
+ repos:
+  - repo: https://github.com/psf/black
+    rev: 22.3.0
+    hooks:
+      - id: black
+  - repo: https://gitlab.com/pycqa/flake8
+    rev: 4.0.0
+    hooks:
+      - id: flake8
+
+4.4. Хуки - "poetry run pre-commit install"
