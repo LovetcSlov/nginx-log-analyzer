@@ -1,0 +1,33 @@
+1. Установка Poetry - "pip install poetry"
+2. Создание структуры проекта:
+2.1. Инициализация проекта - "poetry new nginx-log-analyzer" и "cd nginx-log-analyzer"
+2.2. Дополнительные папки и файлы:
+2.2.1. Папка "logs" - "mkdir logs"
+2.2.2. CLI - "touch nginx_log_analyzer/cli.py" ("echo > nginx_log_analyzer/cli.py" под win)
+2.2.3. файл для парсера - "touch nginx_log_analyzer/parser.py"
+2.2.4. файл для анализатора - "touch nginx_log_analyzer/analyzer.py"
+2.2.5. файл для статистики - "touch nginx_log_analyzer/stats.py"
+2.2.6. файл .gitignore - "touch .gitignore"
+Добавить в него стандартные исключения для Python:
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+.mypy_cache/
+.pytest_cache/
+.coverage
+htmlcov/
+dist/
+build/
+*.egg-info/
+.DS_Store
+
+2.2.8. файл .env для переменных окружения - "touch .env"
+2.2.9. файл Dockerfile - "touch Dockerfile"
+2.2.10. файл Makefile - "touch Makefile"
+2.2.11. Создать папку для CI/CD (GitHub Actions) - "mkdir -p .github/workflows
+touch .github/workflows/ci.yml"
