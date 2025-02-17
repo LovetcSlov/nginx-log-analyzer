@@ -59,3 +59,5 @@ git push -u origin master
 4.4. Хуки - "poetry run pre-commit install"
 5. Настройка CI/CD (GitHub Actions)
 5.1. Создание файла .github/workflows/ci.yml
+6. Написание Dockerfile
+7. Написание README.md
